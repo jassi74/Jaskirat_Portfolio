@@ -22,6 +22,14 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
+   
+    
+
+  // toggle menu/navbar script
+  $('.menu-btn').click(function(){
+    $('.navbar .menu').toggleClass("active");
+    $('.menu-btn i').toggleClass("active");
+});
 
     $('.carousel').owlCarousel({
         margin: 20,
