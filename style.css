@@ -370,8 +370,8 @@ section .title::after{
 /* project section styling */
 
 .projects{
-    background-color: #b3b3b3;
-    color: #111;
+    background-color: black;
+    color: white;
 }
 
 .projects .carousel2 .project-lists .project-left {  

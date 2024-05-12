@@ -15,8 +15,6 @@ function sendMail(){
                 document.getElementById("contactform").reset();
             }
 
-            
-        
      } catch (err) {
          alert(err.message);
      }
