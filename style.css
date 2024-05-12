@@ -589,6 +589,9 @@ section .title::after{
         margin: 20px 0;
         font-size: 25px;
     }
+    .home .home-content{
+        width: 80%;
+    }
     .home .home-content .text-2{
         font-size: 70px;
     }
@@ -644,6 +647,9 @@ section .title::after{
     .max-width{
         padding: 0 23px;
     }
+    .home .home-content{
+        width: 80%;
+    }
     .home .home-content .text-2{
         font-size: 60px;
     }
@@ -652,6 +658,9 @@ section .title::after{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .services .serv-content{
+        flex-direction: column;
     }
     .services .serv-content .card{
         width: 100%;
@@ -663,6 +672,9 @@ section .title::after{
         background: url("images/profile-1.jpeg") no-repeat center ; 
         background-size: 68vh;
     }
+    .home .home-content{
+    width: 90%;
+}
     .home .home-content .text-2{
         font-size: 50px;
     }
