@@ -38,6 +38,7 @@ section{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
+.projects .carousel2 .project-lists,
 .services .serv-content,
 .contact .contact-content{
     display: flex;
@@ -245,7 +246,7 @@ section .title::after{
     border-radius: 60px;
 }
 .about .about-content .left{
-    filter: drop-shadow(20px 20px 10px rgba(56, 56, 56, 0.915));;
+    filter: drop-shadow(20px 20px 10px rgba(56, 56, 56, 0.915));
 }
 .about .about-content .right{
     width: 55%;
@@ -366,6 +367,39 @@ section .title::after{
     background: crimson!important;
 }
 
+/* project section styling */
+
+.projects{
+    background-color: #b3b3b3;
+    color: #111;
+}
+
+.projects .carousel2 .project-lists .project-left {  
+    text-align: center;
+    font-size: 25px;
+    width: 55%;
+}
+.projects .carousel2 .project-lists .project-left .project-name{
+    text-decoration: underline;
+}
+.projects .carousel2 .project-lists .project-right{
+    width: 40%;
+    
+    /* margin-left: 40px; */
+    /* filter: drop-shadow(10px 10px 3px rgba(56, 56, 56, 0.5)); */
+}
+.projects .carousel2 .project-lists .project-right img:hover{
+    /* filter: drop-shadow(10px 10px 3px rgba(23, 23, 23, 0.5)); */
+    border: solid 6px crimson;
+    border-radius: 50px;
+}
+.projects .carousel2 .project-lists .project-right img{
+    object-fit: cover;
+    border: solid 3px crimson;
+    border-radius: 60px;
+   
+}
+
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
@@ -462,11 +496,15 @@ section .title::after{
   background: none;
 }
 
+
+
+
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
+   
 }
 
 @media (max-width: 991px) {
@@ -528,6 +566,22 @@ section .title::after{
     .about .about-content .right{
         flex: 100%;
     }
+    
+    .projects .carousel2 .project-lists {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+      
+        margin: 0 auto 60px;
+    }
+    .projects .carousel2 .project-lists .project-left{
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .projects .carousel2 .project-lists .project-right{
+        width: 80%;
+    }
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -574,7 +628,7 @@ section .title::after{
     }
     .contact .right form .fields{
         flex-direction: column;
-    }
+    } 
     .contact .right form .name,
     .contact .right form .email{
         margin: 0;
