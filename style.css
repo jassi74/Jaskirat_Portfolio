@@ -34,12 +34,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .experiences, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .projects .carousel2 .project-lists,
-.services .serv-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -191,6 +190,9 @@ section .title::after{
 .home .max-width .row{
   margin-right: 0;
 }
+.home .home-content{
+    width: 60%;
+}
 .home .home-content .text-1{
     font-size: 27px;
 }
@@ -279,72 +281,113 @@ section .title::after{
     background: none;
 }
 
-
-/* skills section styling */
- .skills{
+/* services section styling */
+.services{
     color:#fff;
+    background: black;
+}
+.services .title::before
+{
+    background: #fff;
+}
+.services .title::after{
     background: #111;
-}
-.skills .experience2{
-    margin-top: 30px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-}
 
-.skills .carousel .card .skillname{
-   
-    border: 3px solid crimson;
-    color:white ;
-    padding: 6px 6px ;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 10px 0 7px 0;
-    border-radius: 6px;
-
-   
 }
-.skills .carousel .card{
+.services .serv-content{
+   display: flex;
+   flex-direction: row;
+}
+.services .serv-content .card{
+    margin: 20px;
+    width: calc(33% - 20px);
     background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
     text-align: center;
-    overflow: hidden;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
-
-.skills .carousel .card:hover{ 
+.services .serv-content .card:hover{
     background: crimson;
 }
-.skills .carousel .card .box ul{
-    text-align: left;
-}
-.skills .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.services .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.skills .carousel .card:hover .box{
+.services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.skills .carousel .card .text{
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.skills .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
+.services .serv-content .card  ul{
+    
+    list-style-type:none;
+    text-align: center;
 }
-.skills .carousel .card:hover img{
-    border-color: #fff;
+
+/* experience section styling */
+ .experiences{
+    color:black;
+    background: white;
 }
+.experiences .experience{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experiences .experience .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 20px;
+    padding: 10px 5px 10px 5px;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+}
+.experiences .experience .card .box{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    padding: 2px;
+    border-radius: 5px;
+    
+}
+.experiences .experience .card .box .boxname{
+    font-size: 25px;
+    text-decoration: underline crimson;
+    text-align: left;
+}
+.experiences .experience .card .box .boxdate{
+    font-size: 15px;
+    text-align: right;
+}
+.experiences .experience .card .skillname{
+    text-align: justify;
+}
+
+
+.experiences .experience .card:hover {
+    filter: drop-shadow(10px 10px 3px rgba(220, 20, 60,0.8));
+    transform: scale(1.03);
+}
+
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -373,7 +416,11 @@ section .title::after{
     background-color: black;
     color: white;
 }
+.projects .title{
+    text-decoration: underline crimson;
+    
 
+}
 .projects .carousel2 .project-lists .project-left {  
     text-align: center;
     font-size: 25px;
@@ -586,7 +633,7 @@ section .title::after{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
+    
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -622,8 +669,7 @@ section .title::after{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    .about .about-content .right .text{
         font-size: 19px;
     }
     .contact .right form .fields{
