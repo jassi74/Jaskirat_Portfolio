@@ -191,7 +191,7 @@ section .title::after{
   margin-right: 0;
 }
 .home .home-content{
-    width: 60%;
+    width: 61%;
 }
 .home .home-content .text-1{
     font-size: 27px;
@@ -436,9 +436,9 @@ section .title::after{
     /* filter: drop-shadow(10px 10px 3px rgba(56, 56, 56, 0.5)); */
 }
 .projects .carousel2 .project-lists .project-right img:hover{
-    /* filter: drop-shadow(10px 10px 3px rgba(23, 23, 23, 0.5)); */
+    filter: drop-shadow(10px 10px 3px rgba(23, 23, 23, 0.5));
     border: solid 6px crimson;
-    border-radius: 50px;
+   
 }
 .projects .carousel2 .project-lists .project-right img{
     object-fit: cover;
