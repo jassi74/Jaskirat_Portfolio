@@ -447,6 +447,18 @@ section .title::after{
    
 }
 
+.project1{
+    font-size: 35px ;
+     background-color: rgba(30, 30, 30, 0.7); 
+     padding: 10px; 
+     border-radius: 8px;
+     margin-bottom: 5px;
+}
+.project2{
+    background-color:  rgba(47, 47, 47, 0.7);
+    padding: 20px; 
+    border-radius: 8px;
+}
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
