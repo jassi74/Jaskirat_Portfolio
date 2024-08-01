@@ -326,9 +326,20 @@ section .title::after{
     color: #fff;
 }
 .services .serv-content .card .text{
+
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+.skills1{
+    display: flex;
+    justify-content: center;
+}
+.skillstext{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 10px;
 }
 .services .serv-content .card  ul{
     
